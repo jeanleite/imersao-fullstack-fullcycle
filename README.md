@@ -25,11 +25,11 @@ Verificar a situação dos containers
 kool status 
 ```
 
-Kool é uma ferramenta que auxiliar o desenvolvimento de projetos com docker.
-
 ## About Kool.dev
-https://kool.dev/
-https://github.com/kool-dev/kool
+Kool é uma ferramenta que auxiliar o desenvolvimento de projetos com docker.
+- https://kool.dev/
+- https://github.com/kool-dev/kool
 
-## Projeto original 
-https://github.com/codeedu/imersao-fullstack-fullcycle
+## Imersão Fullstack Fullcycle
+- https://github.com/codeedu/imersao-fullstack-fullcycle
+- https://evento.imersao.fullcycle.com.br/
