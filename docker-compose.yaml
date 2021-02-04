@@ -5,6 +5,8 @@ services:
     build: .
     volumes:
       - .:/go/src/
+      - .pgdata:/var/lib/postgresql/data
+      - $HOME/go/pkg:/go/pkg:delegated
     networks:
      - kool_local
 
@@ -17,8 +19,9 @@ services:
     environment:
       ASUSER: "${KOOL_ASUSER:-0}"
       UID: "${UID:-0}"
-      POSTGRES_PASSWORD: "${DB_NAME:-codepix}"
-      POSTGRES_DB: "${DB_PASSWORD:-rootpass}"
+      POSTGRES_DB: "${DB_DATABASE:-codepix}"
+      POSTGRES_USER: "${DB_USERNAME:-codepix}"
+      POSTGRES_PASSWORD: "${DB_PASSWORD:-rootpass}"
     ports:
       - "5432:5432"
     networks:
@@ -106,9 +109,6 @@ services:
     networks:
      - kool_local
      - kool_global
-
-volumes:
-  db:
 
 networks:
   kool_local:

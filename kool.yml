@@ -2,3 +2,12 @@ scripts:
   setup:
     - cp .env.exemple .env
     - kool start
+
+  deps:
+    - kool run go get google.golang.org/grpc/cmd/protoc-gen-go-grpc
+    - kool run go get google.golang.org/protobuf/cmd/protoc-gen-go
+    - kool run go get github.com/spf13/cobra/cobra 
+    
+  go: kool exec app go
+
+  psql: kool exec db psql -U $DB_USERNAME $DB_DATABASE
