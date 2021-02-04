@@ -1,8 +1,7 @@
 # Imersao-fullstack-fullcycle
 
 ## Subindo o docker do modo tradicional  
-docker-compose build 
-docker-compose up
+docker-compose up -d
 
 ## Usando Kool.dev
 Setup do projeto
