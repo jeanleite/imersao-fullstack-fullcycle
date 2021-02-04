@@ -26,7 +26,7 @@ kool status
 ```
 
 ## About Kool.dev
-Kool é uma ferramenta que auxiliar o desenvolvimento de projetos com docker.
+Kool é uma ferramenta que auxilia o desenvolvimento de projetos com docker.
 - https://kool.dev/
 - https://github.com/kool-dev/kool
 
