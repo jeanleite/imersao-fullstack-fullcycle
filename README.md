@@ -24,6 +24,18 @@ Verificar a situação dos containers
 kool status 
 ```
 
+Para executar comandos go 
+```
+kool run go [command]
+```
+
+Exemplo:
+```
+kool run go get github.com/path/to/packege
+```
+
+Para editar os comandos acessar o arquivo kool.yml
+
 ## About Kool.dev
 Kool é uma ferramenta que auxilia o desenvolvimento de projetos com docker.
 - https://kool.dev/
